@@ -3,7 +3,7 @@ services:
   myweb:
     build: .
     ports:
-    - "8088:5000"
+    - "8088:5800"
     volumes:
     - .:/app
     depends_on:
