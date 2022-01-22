@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  myweb:
+    build: .
+    ports:
+    - "8088:5000"
+    volumes:
+    - .:/app
+    depends_on:
+    - myredis
+  myredis:
+    image: redis:6.0.5-alpine
