@@ -14,6 +14,7 @@ pipeline{
     stage("Building") {
       steps {
         echo "Building App"
+        sh docker-compose up -d
         // sh "cd ./app && docker build -t mynode:latest ."
         // sh "docker run -d -p 3000:3000 --name run_mynode --link my_postgres:my_postgres mynode:latest"
 
