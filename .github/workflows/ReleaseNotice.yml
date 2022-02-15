@@ -26,8 +26,8 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_USERNAME: sl_odoo_BOT
-        SLACK_ICON: 'https://emoji.slack-edge.com/T11STCBJS/sl/197d9457aa47b5d0.png'
+        SLACK_USERNAME: Boo
+        # SLACK_ICON: 'https://emoji.slack-edge.com/T11STCBJS/sl/197d9457aa47b5d0.png'
         # SLACK_ICON_EMOJI: ":bell:"
         # SLACK_COLOR: '#3278BD'
         # SLACK_ICON: false
