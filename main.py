@@ -8,7 +8,7 @@ redis = Redis(host='myredis', port=6379)
 def hello():
     redis.incr('hits')
     redis.expire('hits', 6000) 
-    return '你好! 我們見過 %s 次面。' % redis.get('hits')
+    return '你好! 我們見過 %s 次面。' % str(redis.get('hits'))
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True, port=5800)
