@@ -1,4 +1,12 @@
-steps:
+name: ReleaseNotice
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
       # To check the github context
       - name: Dump Github context
         env:
