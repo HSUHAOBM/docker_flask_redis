@@ -1,9 +1,9 @@
 pipeline{
-  agent 
-  {
-      label "agent"
+  agent any
+//   {
+//       label "agent"
 
-  }
+//   }
   stages{
     stage("Delete Old Container"){
       steps {
