@@ -9,7 +9,7 @@ pipeline{
       steps {
         catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
           echo "Delete the container"
-          sh "docker rm -f run_mynode run_myweb"
+        //   sh "docker rm -f run_mynode run_myweb"
         }
       }
     }
