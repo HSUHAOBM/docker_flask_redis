@@ -1,2 +1,2 @@
-This is test for jenkis.
-maybe do something.
+Jenkinsfile is test for jenkis.ci-cd
+

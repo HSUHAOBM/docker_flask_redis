@@ -1,6 +1,8 @@
 version: '3.8'
 services:
   myweb:
+    environment:
+    - PYTHONUNBUFFERED=1          
     build: .
     ports:
     - "8088:5800"
