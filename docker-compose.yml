@@ -2,10 +2,10 @@ version: '3.8'
 services:
   myweb:
     environment:
-    - PYTHONUNBUFFERED=1          
+    - PYTHONUNBUFFERED=1
     build: .
     ports:
-    - "8088:5800"
+    - "3000:5800"
     volumes:
     - .:/app
     depends_on:
