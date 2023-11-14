@@ -8,7 +8,8 @@ redis = Redis(host='myredis', port=6379)
 @app.route('/')
 def hello():
     redis.incr('hits')
-    redis.expire('hits', 6600)
+    # 設置過期時間30秒
+    redis.expire('hits', 30)
     num = redis.get('hits').decode("utf-8")
     return 'server 1 - 你好! 我們見過 %s 次面。' % num
 
@@ -18,4 +19,4 @@ def index():
     return render_template('index.html', current_time=current_time)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True, port=5800)
+    app.run(host="0.0.0.0", debug=True, port=3000)
